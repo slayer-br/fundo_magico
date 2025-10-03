@@ -1,1 +1,151 @@
-@import url("./reset.css");
+/* Styles */
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  background-color: #0f131a;
+  color: #ffffff;
+  background: url("../images/bg.JPG");
+  line-height: 1.4;
+  padding: 32px 24px;
+}
+
+.header {
+  text-align: center;
+  margin: 40px auto;
+  z-index: 99;
+  position: relative;
+  max-width: 700px;
+}
+
+.header .title {
+  font-size: 4.8rem;
+  margin-bottom: 16px;
+}
+
+.header .subtitle {
+  font-size: 1.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  z-index: 99;
+  position: relative;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.card .card-title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.form-group textarea {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 8px;
+  border: 1px solid #474646;
+  padding: 16px;
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #a655f7;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group textarea::placeholder {
+  color: #2c2c29;
+}
+
+.form-group .btn-magic {
+  width: 100%;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #a655f7 0%, #ff80aa 100%);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-group .btn-magic:hover {
+  background: linear-gradient(90deg, #ff80aa 0%, #a655f7 100%);
+  transform: translateY(-2px);
+}
+
+.preview-card {
+  display: none;
+}
+
+.code-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.code-grid .code-card {
+  background-color: #21242a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  width: 50%;
+}
+.code-grid .code-title {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.code-grid .code-block {
+  background-color: #0a0c10;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1.4rem;
+  color: #5eead4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+  .header .title {
+    font-size: 3.2rem;
+  }
+  
+  .header .subtitle {
+    font-size: 1.6rem;
+  }
+  
+  .form-group .btn-magic {
+    font-size: 1.6rem;
+  }
+
+  .card-header {
+    font-size: 1.6rem;
+  }
+
+
+  .code-grid {
+    flex-direction: column;
+  }
+
+  .code-grid .code-card {
+    width: 100%;
+  }
+}
