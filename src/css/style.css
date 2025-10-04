@@ -62,6 +62,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   color: #ffffff;
   margin-bottom: 20px;
+  resize: none;
 }
 
 .form-group textarea:focus {
@@ -77,7 +78,7 @@ body {
 .form-group .btn-magic {
   width: 100%;
   padding: 16px 32px;
-  background: linear-gradient(90deg, #a655f7 0%, #ff80aa 100%);
+  background: linear-gradient(90deg, #5b11a5 0%, #af1246 100%);
   border: none;
   border-radius: 8px;
   color: #ffffff;
@@ -86,7 +87,7 @@ body {
   transition: all 0.3s ease;
 }
 .form-group .btn-magic:hover {
-  background: linear-gradient(90deg, #ff80aa 0%, #a655f7 100%);
+  background: linear-gradient(90deg, #af1246 0%, #5b11a5 100%);
   transform: translateY(-2px);
 }
 
