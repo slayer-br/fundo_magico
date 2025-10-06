@@ -50,6 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
       setLoading(false);
     }
   });
+
+  document.querySelectorAll(".btn-copy").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const codeBlockId = event.target.dataset.copy;
+      const codeBlock = document.getElementById(codeBlockId);
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(codeBlock.textContent).then(() => {
+          event.target.textContent = "Copiado!";
+          setTimeout(() => {
+            event.target.textContent = `Copiar ${codeBlockId === "html-code" ? "HTML" : "CSS"}`;
+          }, 2000);
+        });
+      }
+    });
+  });
 });
 
 function setLoading(isLoading) {
