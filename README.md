@@ -12,6 +12,9 @@ programação e desenvolvimento de software de forma prática e intensiva.
 ## Screenshot
 ![Screenshot](./src/images/background-magic-desktop.gif)
 
+## Link
+- Site ao vivo: <a href="https://slayer-br.github.io/fundo_magico/" target="_blank" rel="noopener noreferrer">Fundo Mágico</a>
+
 ## Funcionalidades
 
 **Geração de Backgrounds com IA:** Crie backgrounds a partir de descrições em linguagem natural.
