@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let styleTag = document.getElementById("dynamic-style");
 
-      if (styleTag) {
+      if (styleTag) styleTag.remove();
+
+      if (data.style) {
         styleTag = document.createElement("style");
         styleTag.id = "dynamic-style";
 
